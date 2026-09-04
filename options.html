@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="css/ruby.css" />
+    <link rel="stylesheet" type="text/css" href="css/options.css" />
+    <style id="furigana_size_style"></style>
+    <script type="text/javascript" src="depend/sc/elements_with_id.js"></script>
+    <script type="text/javascript" src="depend/sc/choose_files.js"></script>
+    <script type="text/javascript" src="js/selection.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+</head>
+<body>
+
+    <h1>Extension options</h1>
+
+    <h2>User dictionary</h2>
+
+    <p>You can export your dictionary (words you have added) to local file. You can then import it back, e.g. when you make mistake or on another computer.</p>
+
+    <div>
+        <button id="export">Export</button>
+        <button id="import">Import</button>
+        <span id="import_export_info"></span>
+    </div>
+
+    <h2>Mode</h2>
+
+    <fieldset id="mode" style="border: 0; line-height: 180%;">
+        <label><input id="mode_furigana" type="radio" name="mode" value="furigana"/><ruby style="font-size: large;">振り仮名<rt>furigana</rt></ruby></label>
+        <label><input id="mode_roumaji" type="radio" name="mode" value="roumaji"/>Roumaji</label>
+        <label><input id="mode_hiragana" type="radio" name="mode" value="hiragana"/>ひらがな</label>
+        <label><input id="mode_furigana_over_kanji" type="radio" name="mode" value="furigana_over_kanji"/><ruby style="font-size: large;">振<rt>ふ</rt></ruby><ruby style="font-size: large;">り</ruby><ruby style="font-size: large;">仮名<rt>がな</rt></ruby> (using experimental <a href="https://github.com/tmilar/furigana-helper">tokenizer</a> by Tomás Milar)</label>
+    </fieldset>
+
+    <h2>Custom font</h2>
+
+    <div>
+        <label>Font family <input id="custom_font_family" type="text"/> (e.g. monospace, sans-serif, serif, ...)</label>
+        <label>Font size <input id="custom_font_size" type="text"/> (e.g. large, 25px, x-large, ...)</label>
+        <label>Furigana size <input id="custom_furigana_size" type="text"/> (e.g. medium, large, 25px, x-large, ...)</label>
+        <label>Line height <input id="custom_line_height" type="text"/> (e.g. 130%)</label>
+        <h3>Sample text</h3>
+        <div id="sample_text" class="aodgfpaimckcegdimfcghigjkbnobgdj" style="font-size: medium;">太平洋（たいへいよう）とは、アジア（あるいはユーラシア）、オーストラリア、南極、南北アメリカの各大陸に囲まれる世界最大の海洋のこと。大西洋やインド洋とともに、三大洋の1つに数えられる。日本列島も太平洋の周縁部に位置する。面積は約1億5555万7千平方キロメートルであり、全地表の約3分の1にあたる。英語名からパシフィックオーシャン（Pacific ocean）とも日本語で表記されることもある。</div>
+    </div>
+
+    <h2>Colors</h2>
+
+    <p>Having different color for every other phrase is usefull only when you are editing dictionary
+    and you want to see words boundaries better.</p>
+
+    <div><label><input id="colors" type="checkbox" /> Use different colors for even/odd phrases</label></div>
+    <div><label><input id="colors_unknown" type="checkbox" /> Use red color for unknown phrases</label></div>
+
+    <h2>Enable Furigana on dowloaded pages</h2>
+
+    <p>By default Furigana extension cannot read locally downloaded pages (when you open downloaded page and it starts with file://), to allow it you must change settings: </p>
+    <p><button id="file_access_enable">Enable</button></p>
+</body>
+</html>

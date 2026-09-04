@@ -1,0 +1,45 @@
+/* Stylesheet for rubies injected by Furigana chrome extension */
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj {
+    display: inline;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj ruby.even {
+    color: green;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj ruby.odd {
+    color: blue;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj ruby.unknown {
+    color: red;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj ruby:hover {
+    background-color: silver;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj rt:hover {
+    background-color: silver;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj span.even {
+    color: green;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj span.odd {
+    color: blue;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj span.unknown {
+    color: red;
+}
+
+div.aodgfpaimckcegdimfcghigjkbnobgdj span:hover {
+    background-color: silver;
+}
+

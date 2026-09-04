@@ -1,0 +1,28 @@
+body {
+    min-width: 40em;
+    margin: 1ex;
+}
+textarea {
+    display: block;
+    height: 10em;
+    width: 100%;
+    margin-bottom: 1ex;
+
+}
+button {
+    margin-bottom: 1ex;
+}
+#single {
+    display: inline;
+}
+#controls {
+    height: 3em;
+    border: 0px solid red;
+    clear: both;
+}
+#controls button {
+    margin-top: 1ex;
+}
+.footer {
+    text-align: right;
+}

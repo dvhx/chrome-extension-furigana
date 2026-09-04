@@ -1,0 +1,27 @@
+body {
+    max-width: 60em;
+    margin: auto;
+}
+label {
+    display: block;
+}
+label input[type=checkbox] {
+    position: relative;
+    top: 3px;
+}
+label input[type=text] {
+    margin-bottom: 4px;
+}
+#history {
+    font-family: sans serif;
+}
+h2 {
+    margin-top: 2em;
+}
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 5em;
+    margin-bottom: 1ex;
+}
+
